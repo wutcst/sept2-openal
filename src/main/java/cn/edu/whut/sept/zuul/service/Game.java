@@ -149,7 +149,8 @@ public class Game
 
     public void play()
     {
-        printWelcome();
+
+        Print.printWelcome(this);
 
         // Enter the main command loop.  Here we repeatedly read commands and
         // execute them until the game is over.
@@ -158,18 +159,13 @@ public class Game
         while (! finished) {
             Command command = parser.getCommand();
             if(command == null) {
-                if (!Print.flag && !Print.flag1) {
-                    System.out.println("I don't understand...");
-                    Print.flag = true;
-                }
-
+                Print.print("I don't understand...");
             } else {
-                //只有输入quit命令才会退出
                 finished = command.execute(this);
             }
         }
 
-        System.out.println("Thank you for playing.  Good bye.");
+        Print.print("Thank you for playing.  Good bye.");
     }
 
     private void printWelcome()
