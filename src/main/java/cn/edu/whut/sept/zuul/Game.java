@@ -27,6 +27,7 @@ public class Game
     public ArrayList<Room> rooms = new ArrayList<>();
     public int step = 0;
     private Parser parser;
+    public Player player1 = new Player("abc",20);
 
 
     public Game()
