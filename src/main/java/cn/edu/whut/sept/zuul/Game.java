@@ -28,7 +28,7 @@ public class Game
     public int step = 0;
     private Parser parser;
 
-    public Player player1 = new Player("FCY", 20);
+    public Player player1 =  new Player("FCY", 20);
 
 
     public Game()
