@@ -1,16 +1,14 @@
 package cn.edu.whut.sept.zuul.Command;
 
-import cn.edu.whut.sept.zuul.Command.Command;
-import cn.edu.whut.sept.zuul.Game;
-import cn.edu.whut.sept.zuul.Print;
-
-import java.util.regex.Pattern;
+import cn.edu.whut.sept.zuul.service.Game;
+import cn.edu.whut.sept.zuul.service.Print;
 
 public class DropCommand extends Command {
     public boolean execute(Game game)
     {
         if(!hasSecondWord()) {
-            Print.print("Drop what?");
+            Print.s += "Drop what?";
+            //Print.print();
             return false;
         }
 

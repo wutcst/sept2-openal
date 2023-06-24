@@ -1,7 +1,7 @@
 package cn.edu.whut.sept.zuul.entity;
 
-import cn.edu.whut.sept.zuul.Game;
-import cn.edu.whut.sept.zuul.Print;
+import cn.edu.whut.sept.zuul.service.Game;
+import cn.edu.whut.sept.zuul.service.Print;
 
 import java.util.ArrayList;
 import java.util.Random;

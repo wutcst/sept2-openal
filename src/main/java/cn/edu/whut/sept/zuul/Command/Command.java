@@ -1,6 +1,6 @@
 package cn.edu.whut.sept.zuul.Command;
 
-import cn.edu.whut.sept.zuul.Game;
+import cn.edu.whut.sept.zuul.service.Game;
 
 public abstract class Command
 {

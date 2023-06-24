@@ -1,10 +1,7 @@
 package cn.edu.whut.sept.zuul.Command;
 
-import cn.edu.whut.sept.zuul.Command.Command;
-import cn.edu.whut.sept.zuul.Game;
-import cn.edu.whut.sept.zuul.Print;
-
-import java.util.regex.Pattern;
+import cn.edu.whut.sept.zuul.service.Game;
+import cn.edu.whut.sept.zuul.service.Print;
 
 public class BackCommand extends Command {
 
@@ -16,10 +13,11 @@ public class BackCommand extends Command {
             game.setCurrentRoom(game.previousRoom.get(game.step-1));
             game.step--;
             if(game.step == 0){
-                Print.print("You're back to square one!");
+                Print.s += "You're back to square one!";
+//                Print.print();
             }
             else{
-                Print.print("You are teleported to" + " " + game.getCurrentRoom().getShortDescription());
+                Print.s += "You are teleported to" + " " + game.getCurrentRoom().getShortDescription();
                 Print.print(game.getCurrentRoom().getLongDescription());
             }
             Print.print(game.getCurrentRoom().getLongDescription());
