@@ -69,7 +69,7 @@ public class Room
     }
 
     public void randomTransfer(Game game){
-        Random random = new Random();
+        Random random =  new Random();
         int roomNum = random.nextInt(10) + 1;
         transmission(game, roomNum);
     }
