@@ -1,4 +1,9 @@
-package cn.edu.whut.sept.zuul;
+package cn.edu.whut.sept.zuul.Command;
+
+import cn.edu.whut.sept.zuul.Command.Command;
+import cn.edu.whut.sept.zuul.Command.CommandWords;
+import cn.edu.whut.sept.zuul.Game;
+import cn.edu.whut.sept.zuul.Print;
 
 public class HelpCommand extends Command
 {
@@ -11,11 +16,9 @@ public class HelpCommand extends Command
 
     public boolean execute(Game game)
     {
-        System.out.println("You are lost. You are alone. You wander");
-        System.out.println("around at the university.");
-        System.out.println();
-        System.out.println("Your command words are:");
+        Print.help();
         commandWords.showAll();
+
         return false;
     }
 }
