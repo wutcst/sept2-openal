@@ -68,12 +68,10 @@ public class Room
         }
     }
 
-    public void randomTransfer(Game game){
-        Random random =  new Random();
+    public void randomTransfer(Game game){r
         int roomNum = random.nextInt(10) + 1;
         transmission(game, roomNum);
     }
-
     public int hasOneThing(String thing){
 
         for (int i = 0; i < things.size(); i++) {
