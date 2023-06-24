@@ -74,6 +74,7 @@ public class Room
         transmission(game, roomNum);
     }
 
+
     public int hasOneThing(String thing){
 
         for (int i = 0; i < things.size(); i++) {
