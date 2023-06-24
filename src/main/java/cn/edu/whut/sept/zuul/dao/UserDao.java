@@ -1,7 +1,6 @@
 package cn.edu.whut.sept.zuul.dao;
 
 import cn.edu.whut.sept.zuul.domain.User;
-import com.whut.domain.User;
 import org.apache.ibatis.annotations.Insert;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Select;
