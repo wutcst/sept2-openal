@@ -1,8 +1,8 @@
 package cn.edu.whut.sept.zuul.Controller;
 
-import com.whut.service.Game;
-import com.whut.service.Print;
-import com.whut.service.Result;
+import cn.edu.whut.sept.zuul.Game;
+import cn.edu.whut.sept.zuul.Print;
+import cn.edu.whut.sept.zuul.service.Result;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;

@@ -1,9 +1,9 @@
 package cn.edu.whut.sept.zuul.Controller;
 
-import com.whut.domain.User;
-import com.whut.service.Code;
-import com.whut.service.Result;
-import com.whut.service.UserService;
+import cn.edu.whut.sept.zuul.domain.User;
+import cn.edu.whut.sept.zuul.service.Code;
+import cn.edu.whut.sept.zuul.service.Result;
+import cn.edu.whut.sept.zuul.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
