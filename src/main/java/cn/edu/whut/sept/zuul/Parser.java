@@ -1,5 +1,8 @@
 package cn.edu.whut.sept.zuul;
 
+import cn.edu.whut.sept.zuul.Command.Command;
+import cn.edu.whut.sept.zuul.Command.CommandWords;
+
 import java.util.Scanner;
 
 public class Parser
