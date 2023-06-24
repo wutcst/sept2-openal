@@ -1,7 +1,6 @@
 package cn.edu.whut.sept.zuul.Command;
 
-import cn.edu.whut.sept.zuul.Command.Command;
-import cn.edu.whut.sept.zuul.Game;
+import cn.edu.whut.sept.zuul.service.Game;
 
 public class ItemsCommand extends Command {
     public boolean execute(Game game)

@@ -1,7 +1,7 @@
 package cn.edu.whut.sept.zuul.entity;
 
-import cn.edu.whut.sept.zuul.Game;
-import cn.edu.whut.sept.zuul.Print;
+import cn.edu.whut.sept.zuul.service.Game;
+import cn.edu.whut.sept.zuul.service.Print;
 
 import java.util.ArrayList;
 
@@ -48,9 +48,11 @@ public class Player {
     }
 
     public void showThings(Game game){
-        Print.print("The things of this player have :");
+        Print.s += "The things of this player have :";
+        //Print.print("The things of this player have :");
         for (int i = 0; i < game.player1.things.size(); i++) {
-            Print.print(game.player1.things.get(i).name + " " + game.player1.things.get(i).weight +"kg");
+            Print.s += game.player1.things.get(i).name + " " + game.player1.things.get(i).weight +"kg";
+            //Print.print(game.player1.things.get(i).name + " " + game.player1.things.get(i).weight +"kg");
         }
     }
 

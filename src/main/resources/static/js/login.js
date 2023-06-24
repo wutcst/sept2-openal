@@ -45,7 +45,6 @@ video.addEventListener('click',function() {
 
 const login = document.querySelector('.beginGame .login')
 const start = document.querySelector('.beginGame .game')
-const startContro = document.querySelector('.start')
 const username = document.querySelector(('.beginGame .div2 [type="text"]'))
 const pwd = document.querySelector(('.beginGame .div2 [type="password"]'))
 let username1;
@@ -79,11 +78,6 @@ login.addEventListener('click',function() {
 start.addEventListener('click',function() {
     location.href = '../game.html?username1=' + username1
 })
-
-startContro.addEventListener('click',function () {
-    location.href='../contr.html'
-})
-
 
 
 

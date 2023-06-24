@@ -1,9 +1,7 @@
 package cn.edu.whut.sept.zuul.Command;
 
-import cn.edu.whut.sept.zuul.Command.Command;
-import cn.edu.whut.sept.zuul.Command.CommandWords;
-import cn.edu.whut.sept.zuul.Game;
-import cn.edu.whut.sept.zuul.Print;
+import cn.edu.whut.sept.zuul.service.Game;
+import cn.edu.whut.sept.zuul.service.Print;
 
 public class HelpCommand extends Command
 {

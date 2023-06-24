@@ -11,7 +11,7 @@
  * @author  Michael Kölling and David J. Barnes
  * @version 1.0
  */
-package cn.edu.whut.sept.zuul;
+package cn.edu.whut.sept.zuul.service;
 
 import cn.edu.whut.sept.zuul.Command.Command;
 import cn.edu.whut.sept.zuul.entity.Player;
@@ -149,8 +149,7 @@ public class Game
 
     public void play()
     {
-
-        Print.printWelcome(this);
+        printWelcome();
 
         // Enter the main command loop.  Here we repeatedly read commands and
         // execute them until the game is over.
@@ -159,13 +158,28 @@ public class Game
         while (! finished) {
             Command command = parser.getCommand();
             if(command == null) {
-                Print.print("I don't understand...");
+                if (!Print.flag && !Print.flag1) {
+                    System.out.println("I don't understand...");
+                    Print.flag = true;
+                }
+
             } else {
+                //只有输入quit命令才会退出
                 finished = command.execute(this);
             }
         }
 
-        Print.print("Thank you for playing.  Good bye.");
+        System.out.println("Thank you for playing.  Good bye.");
+    }
+
+    private void printWelcome()
+    {
+        System.out.println();
+        System.out.println("Welcome to the World of Zuul!");
+        System.out.println("World of Zuul is a new, incredibly boring adventure game.");
+        System.out.println("Type 'help' if you need help.");
+        System.out.println();
+        System.out.println(currentRoom.getLongDescription());
     }
 
 

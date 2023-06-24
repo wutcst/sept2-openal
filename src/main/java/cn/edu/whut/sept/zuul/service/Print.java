@@ -1,8 +1,4 @@
-package cn.edu.whut.sept.zuul;
-
-import cn.edu.whut.sept.zuul.Command.CommandWords;
-
-import java.util.Iterator;
+package cn.edu.whut.sept.zuul.service;
 
 public class Print {
 
@@ -35,8 +31,9 @@ public class Print {
     }
 
 
-    public static void print(String s){
-        System.out.println(s);
+    public static void print(String s1){
+        System.out.println(s1);
+        s += s1;
     }
 
 }
