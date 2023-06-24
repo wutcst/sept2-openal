@@ -1,0 +1,110 @@
+body {
+  background-image: url('../image/background.png');
+}
+section {
+  width: 1400px;
+  height: 700px;
+  margin: 0 auto;
+}
+section .gameTitle {
+  font-family: 'Old English Text MT', Courier, monospace;
+  font-size: 36px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: #FFD700;
+  text-shadow: 5px 2px 2px #000;
+  letter-spacing: 5px;
+}
+section video {
+  width: 32px;
+  height: 32px;
+  background-image: url('../image/music_on.png');
+  border-radius: 10px;
+  float: right;
+  animation: rotate 2s linear infinite;
+  cursor: pointer;
+}
+section video:hover {
+  scale: 1.4;
+}
+section .beginGame {
+  width: 500px;
+  margin: 15px auto;
+  text-align: center;
+}
+section .beginGame .introduce {
+  font-family: 'Old English Text MT', Courier, monospace;
+  font-size: 36px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: #FFD700;
+  text-shadow: 2px 2px 2px #000;
+  letter-spacing: 5px;
+}
+section .beginGame .div1 {
+  width: 500px;
+  height: 200px;
+  margin: 25px 0;
+}
+section .beginGame .div2 {
+  width: 500px;
+  height: 200px;
+  margin: 25px 0;
+  display: none;
+}
+section .beginGame .div2 .inputs {
+  display: flex;
+  flex-direction: column;
+}
+section .beginGame .div2 .inputs div {
+  font-family: 'Old English Text MT', Courier, monospace;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: #FFD700;
+  text-shadow: 2px 2px 2px #000;
+  letter-spacing: 5px;
+}
+section .beginGame .div2 .inputs div input {
+  width: 280px;
+  height: 25px;
+  margin: 0 auto;
+  margin-top: 25px;
+  background-color: transparent;
+  border: 1px orangered solid;
+}
+section .beginGame button {
+  margin: 0 auto;
+  width: 200px;
+  height: 80px;
+  background-image: url('../image/muban.png');
+  border-radius: 10px;
+  color: #FFD700;
+  font-size: 24px;
+  letter-spacing: 5px;
+  font-family: 'Pacifico', cursive;
+  cursor: pointer;
+}
+section .beginGame button:hover {
+  font-size: 36px;
+}
+section .beginGame button:hover {
+  scale: 1.2;
+}
+section .beginGame .game {
+  display: none;
+}
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
